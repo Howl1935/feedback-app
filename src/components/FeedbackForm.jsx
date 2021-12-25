@@ -19,7 +19,7 @@ function FeedbackForm() {
 			setText(item.text);
 			setRating(item.rating);
 		}
-	}, [feedbackEdit]);
+	}, [item, edit]);
 
 	const handleTextChange = (e) => {
 		if (text === '') {
